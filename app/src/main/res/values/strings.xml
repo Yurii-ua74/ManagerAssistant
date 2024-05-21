@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ManagerAssistant</string>
+    <string name="title_btn_demo">D E M O</string>
+    <string name="title_btn_work">W O R K</string>
+    <string name="main_title">Trader`s assistant</string>
+</resources>
