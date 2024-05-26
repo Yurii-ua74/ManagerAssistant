@@ -3,4 +3,8 @@
     <string name="title_btn_demo">D E M O</string>
     <string name="title_btn_work">W O R K</string>
     <string name="main_title">Trader`s assistant</string>
+    <string name="current_pr_input">Enter current price</string>
+    <string name="waiting_pr_input">Enter waiting price</string>
+    <string name="name_btn_demo">Search Price</string>
+
 </resources>

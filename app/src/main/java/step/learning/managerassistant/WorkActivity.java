@@ -3,21 +3,25 @@ package step.learning.managerassistant;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.widget.TextView;
+
+import com.managerassistant.database.database.DatabaseHelper;
 import com.managerassistant.network.AlphaVantageRequest;
-import androidx.appcompat.app.AppCompatActivity;
 
 
 public class WorkActivity extends AppCompatActivity {
     private TextView textView;
+    private String symbol = "IBM"; // Ініціалізація змінної symbol
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_work);
 
-        textView = findViewById(R.id.textView);
+        //textView = findViewById(R.id.textView);
 
-        AlphaVantageRequest request = new AlphaVantageRequest(textView);
+        //AlphaVantageRequest request = new AlphaVantageRequest(textView, symbol);
+        DatabaseHelper databaseHelper = new DatabaseHelper(this);
+        AlphaVantageRequest request = new AlphaVantageRequest(databaseHelper, symbol);
         request.fetchResponse();
 
 

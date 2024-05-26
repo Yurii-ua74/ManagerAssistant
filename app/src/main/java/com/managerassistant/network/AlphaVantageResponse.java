@@ -6,6 +6,7 @@ import java.util.Map;
 public class AlphaVantageResponse {
     @SerializedName("Meta Data")
     private MetaData metaData;
+
     @SerializedName("Time Series (Daily)")
     private Map<String, DailyData> timeSeriesDaily;
 
